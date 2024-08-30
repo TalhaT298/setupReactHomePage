@@ -32,7 +32,7 @@ Install the initial dependencies:
 ```bash
 npm install
 ```
-2. Set Up React Router DOM
+## 2. Set Up React Router DOM
 Next, install React Router DOM and its dependencies:
 
 ```bash
@@ -41,7 +41,7 @@ npm install localforage match-sorter sort-by
 ```
 These libraries are essential for client-side routing and data management in your React app.
 
-3. Set Up TailwindCSS
+## 3. Set Up TailwindCSS
 To set up TailwindCSS, you need to install TailwindCSS and its dependencies:
 
 ```bash
@@ -71,7 +71,7 @@ Then, include Tailwind in your CSS by adding the following lines to your src/ind
 @tailwind utilities;
 ```
 
-4. Install DaisyUI
+## 4. Install DaisyUI
 DaisyUI is a plugin for TailwindCSS that provides pre-built UI components. Install it with:
 
 ```bash
