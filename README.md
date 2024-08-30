@@ -1,4 +1,4 @@
-### Modern React Boilerplate with Vite, TailwindCSS & DaisyUI
+## Modern React Boilerplate with Vite, TailwindCSS & DaisyUI
 
 This project is designed as a modern React home boilerplate, leveraging the power of Vite for fast and efficient development. By integrating essential tools like React Router DOM, TailwindCSS, and DaisyUI, this setup provides a robust foundation for building responsive and dynamic web applications. </br>
 
@@ -9,3 +9,43 @@ TailwindCSS, a utility-first CSS framework, is then integrated to facilitate rap
 ESLint is incorporated into the project to maintain code quality and ensure consistency across the codebase. This tool is vital for catching potential issues early in the development process, leading to a more reliable and maintainable application.</br>
 
 By following the installation steps and configuring each tool correctly, developers can quickly set up a powerful and scalable React application. This boilerplate not only simplifies the initial setup but also provides a strong foundation for building complex, production-ready web applications.</br>
+
+# Project Setup
+
+This guide will help you set up a new React project using Vite, React Router DOM, and TailwindCSS.
+
+## 1. Create a New Project with Vite
+
+To start, create a new project using Vite:
+
+```bash
+npm create vite@latest name-of-your-project -- --template react
+```
+Replace name-of-your-project with your desired project name.
+
+Navigate into your project directory:
+
+```bash
+cd name-of-your-project
+```
+Install the initial dependencies:
+
+```bash
+npm install
+```
+2. Set Up React Router DOM
+Next, install React Router DOM and its dependencies:
+
+```bash
+npm install react-router-dom
+npm install localforage match-sorter sort-by
+```
+These libraries are essential for client-side routing and data management in your React app.
+
+3. Set Up TailwindCSS
+To set up TailwindCSS, you need to install TailwindCSS and its dependencies:
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
