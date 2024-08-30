@@ -8,7 +8,6 @@ TailwindCSS, a utility-first CSS framework, is then integrated to facilitate rap
 
 ESLint is incorporated into the project to maintain code quality and ensure consistency across the codebase. This tool is vital for catching potential issues early in the development process, leading to a more reliable and maintainable application.</br>
 
-By following the installation steps and configuring each tool correctly, developers can quickly set up a powerful and scalable React application. This boilerplate not only simplifies the initial setup but also provides a strong foundation for building complex, production-ready web applications.</br>
 
 # Project Setup
 
@@ -49,3 +48,52 @@ To set up TailwindCSS, you need to install TailwindCSS and its dependencies:
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
+Next, configure Tailwind to remove unused styles in production by adding the paths to all of your template files in the content array in tailwind.config.js:
+
+```bash
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Then, include Tailwind in your CSS by adding the following lines to your src/index.css file:
+
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+4. Install DaisyUI
+DaisyUI is a plugin for TailwindCSS that provides pre-built UI components. Install it with:
+
+```bash
+npm i -D daisyui@latest
+```
+Then, add DaisyUI to your tailwind.config.js plugins:
+
+```bash
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["dark","light","black","forest","autumn","valentine","night","dracula"],
+  },
+}
+```
+
+By following the installation steps and configuring each tool correctly, developers can quickly set up a powerful and scalable React application. This boilerplate not only simplifies the initial setup but also provides a strong foundation for building complex, production-ready web applications.</br>
